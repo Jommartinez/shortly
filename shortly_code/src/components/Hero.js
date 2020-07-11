@@ -33,7 +33,7 @@ const ContainerStyled = styled.div`
 		width: auto;
 		display: block;
 		border: none;
-		padding: 0.75em 2em;
+		padding: 0.75em 2.5em;
 		font-size: 1.125rem;
 		border-radius: 1.75em;
 	}
