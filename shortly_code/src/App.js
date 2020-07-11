@@ -54,17 +54,21 @@ const App = () => {
 
 	return (
 		<>
-			<Header />
-			<Hero />
-			<Form
-				url={url}
-				handleChange={inputValue}
-				handleClick={shorten}
-				error={error}
-			/>
-			{cards.map((card, index) => (
-				<Card key={index} card={card} />
-			))}
+			<section className="white">
+				<Header />
+				<Hero />
+			</section>
+			<section className="grey">
+				<Form
+					url={url}
+					handleChange={inputValue}
+					handleClick={shorten}
+					error={error}
+				/>
+				{cards.map((card, index) => (
+					<Card key={index} card={card} />
+				))}
+			</section>
 		</>
 	)
 }

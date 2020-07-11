@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 const FormStyled = styled.section`
-	margin: 5.5em auto 5em;
+	margin: 11em auto -5.5em;
 	width: 90%;
 
 	.form {
@@ -18,6 +18,7 @@ const FormStyled = styled.section`
 		background-position: 100% 0;
 		background-size: 70%;
 		border-radius: 0.625em;
+		transform: translateY(-50%);
 		input {
 			border: 3px solid transparent;
 			border-radius: 0.313em;
