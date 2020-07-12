@@ -19,6 +19,11 @@ const FormStyled = styled.section`
 		background-size: 70%;
 		border-radius: 0.625em;
 		transform: translateY(-50%);
+		@media screen and (min-width: 1120px) {
+			flex-direction: row;
+			margin-bottom: 4em;
+			align-items: center;
+		}
 		input {
 			border: 3px solid transparent;
 			border-radius: 0.313em;
@@ -26,6 +31,11 @@ const FormStyled = styled.section`
 			color: var(--grayishViolet);
 			font-size: 1.125rem;
 			margin-bottom: 1em;
+			@media screen and (min-width: 1120px) {
+				flex-grow: 1;
+				margin-right: 2em;
+				margin-bottom: 0;
+			}
 			&::placeholder {
 				color: var(--grayishViolet);
 				opacity: 1;
@@ -54,6 +64,10 @@ const FormStyled = styled.section`
 			color: white;
 			background-color: var(--cyan);
 			font-weight: 700;
+			@media screen and (min-width: 1120px) {
+				flex-direction: row;
+				height: 54.59px;
+			}
 		}
 	}
 `
