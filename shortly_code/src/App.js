@@ -4,6 +4,9 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Form from './components/Form'
 import Card from './components/Card'
+import Info from './components/info'
+import Banner from './components/Banner'
+import Footer from './components/Footer'
 
 const App = () => {
 	const [url, setUrl] = useState('')
@@ -68,6 +71,9 @@ const App = () => {
 				{cards.map((card, index) => (
 					<Card key={index} card={card} />
 				))}
+				<Info />
+				<Banner />
+				<Footer />
 			</section>
 		</>
 	)
