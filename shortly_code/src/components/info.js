@@ -4,14 +4,20 @@ import styled from '@emotion/styled'
 const InfoStyled = styled.section`
 	margin: 5em auto 1em;
 	width: 90%;
+	max-width: 1110px;
 	text-align: center;
 	.info {
+		margin: 0 auto;
 		margin-bottom: 6em;
+		max-width: 540px;
 	}
 	h2 {
 		font-size: 1.75rem;
 		margin-bottom: 1em;
 		color: var(--veryDarkBlue);
+		@media screen and (min-width: 1120px) {
+			font-size: 2.5rem;
+		}
 	}
 	h3 {
 		font-size: 1.375rem;
@@ -20,17 +26,30 @@ const InfoStyled = styled.section`
 	p {
 		font-size: 1rem;
 		color: var(--grayishViolet);
+		@media screen and (min-width: 1120px) {
+			font-size: 1.125rem;
+		}
 	}
 	.cards-info {
 		display: grid;
 		grid-template-columns: 1fr;
 		row-gap: 5.75em;
+		@media screen and (min-width: 1120px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 1.875em;
+		}
 		.card {
 			position: relative;
 			background-color: white;
 			padding: 4.813em 2.2em 2.2em;
 			border-radius: 0.313em;
+			@media screen and (min-width: 1120px) {
+				text-align: left;
+			}
 			&:nth-child(2) {
+				@media screen and (min-width: 1120px) {
+					margin-top: 2.75em;
+				}
 				&::before {
 					content: '';
 					width: 0.5em;
@@ -40,16 +59,38 @@ const InfoStyled = styled.section`
 					top: -92px;
 					left: 50%;
 					transform: translateX(-50%);
+					@media screen and (min-width: 1120px) {
+						left: -1.875em;
+						z-index: 1;
+						top: 110px;
+						transform: none;
+						width: 1.875em;
+						height: 0.5em;
+					}
 				}
 				&::after {
 					content: '';
 					width: 0.5em;
-					height: 3em;
+					height: 1.875em;
 					background-color: var(--cyan);
 					position: absolute;
 					bottom: -3em;
 					left: 50%;
 					transform: translateX(-50%);
+					@media screen and (min-width: 1120px) {
+						left: auto;
+						right: -1.875em;
+						z-index: 1;
+						top: 110px;
+						transform: none;
+						width: 1.875em;
+						height: 0.5em;
+					}
+				}
+			}
+			&:nth-child(3) {
+				@media screen and (min-width: 1120px) {
+					margin-top: 5.5em;
 				}
 			}
 			.image {
@@ -63,6 +104,10 @@ const InfoStyled = styled.section`
 				top: 0;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				@media screen and (min-width: 1120px) {
+					left: 32px;
+					transform: translateY(-50%);
+				}
 			}
 			p {
 				font-size: 0.938rem;

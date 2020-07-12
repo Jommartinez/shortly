@@ -10,13 +10,26 @@ const CardStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	max-width: 720px;
+	max-width: 1110px;
+	@media screen and (min-width: 1120px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1110px;
+		padding: 0.5rem 2rem;
+		font-size: 1.25rem;
+	}
 	.card-link {
 		color: var(--veryDarkBlue);
 		padding-bottom: 1em;
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
+		@media screen and (min-width: 1120px) {
+			padding-bottom: 0;
+			max-width: 35em;
+		}
 	}
 	.card-line {
 		content: ' ';
@@ -24,11 +37,18 @@ const CardStyled = styled.div`
 		max-width: 720px;
 		height: 1px;
 		background-color: var(--grayLight);
+		@media screen and (min-width: 1120px) {
+			display: none;
+		}
 	}
 	.card-url {
 		color: var(--cyan);
 		padding-top: 1em;
 		padding-bottom: 1em;
+		@media screen and (min-width: 1120px) {
+			margin-left: auto;
+			margin-right: 2em;
+		}
 	}
 	button {
 		border: 2px solid transparent;

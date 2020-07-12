@@ -6,6 +6,22 @@ const HeroStyled = styled.section`
 	overflow: hidden;
 	img {
 		width: 31em;
+		@media screen and (min-width: 1120px) {
+			position: absolute;
+			width: 45em;
+			right: -7%;
+		}
+	}
+	@media screen and (min-width: 1120px) {
+		display: flex;
+		max-width: 1108px;
+		justify-content: flex-end;
+		margin: 0 auto;
+		flex-direction: row-reverse;
+		margin-top: 4em;
+		padding-bottom: 3em;
+		margin-left: auto;
+		overflow: inherit;
 	}
 `
 const ContainerStyled = styled.div`
@@ -15,17 +31,32 @@ const ContainerStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@media screen and (min-width: 1120px) {
+		flex: 1 1 650px;
+		max-width: 650px;
+		text-align: left;
+		align-items: flex-start;
+	}
 	h1 {
 		color: var(--veryDarkBlue);
 		font-size: 2.625rem;
 		line-height: 3rem;
 		padding-bottom: 0.4em;
+		@media screen and (min-width: 1120px) {
+			font-size: 5rem;
+			line-height: 5.625rem;
+		}
 	}
 	p {
 		color: var(--grayishViolet);
 		font-size: 1.125rem;
 		line-height: 1.875rem;
 		padding-bottom: 2em;
+		@media screen and (min-width: 1120px) {
+			font-size: 1.375rem;
+			line-height: 2.25rem;
+			max-width: 540px;
+		}
 	}
 	button {
 		color: white;

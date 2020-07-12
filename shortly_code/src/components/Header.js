@@ -9,6 +9,13 @@ const HeaderStyled = styled.header`
 	justify-content: space-between;
 	margin: 2.3em auto 1em;
 	width: 90%;
+	max-width: 1108px;
+	.logo {
+		@media screen and (min-width: 1120px) {
+			display: flex;
+			align-items: center;
+		}
+	}
 `
 
 function Header() {

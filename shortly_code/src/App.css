@@ -23,3 +23,6 @@ section.white {
 section.grey {
 	background-color: var(--grayLight);
 }
+body {
+	overflow-x: hidden;
+}

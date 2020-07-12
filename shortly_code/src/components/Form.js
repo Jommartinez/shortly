@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 const FormStyled = styled.section`
 	margin: 11em auto -5.5em;
 	width: 90%;
-
+	max-width: 1110px;
 	.form {
 		position: relative;
 		width: 100%;

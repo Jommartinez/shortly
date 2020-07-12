@@ -14,6 +14,9 @@ const HamburgerStyled = styled.div`
 		height: 3px;
 		background-color: var(--grayishViolet);
 	}
+	@media screen and (min-width: 1120px) {
+		display: none;
+	}
 `
 
 function Hamburger() {
